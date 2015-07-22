@@ -1,0 +1,150 @@
+2015-07-22 11:58:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithub could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithub',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithub
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 11:59:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithub could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithub',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithub/index.ctp
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 11:59:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithub could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithub',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithub
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 12:01:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithub could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithub',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithub
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 12:03:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithub could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithub',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithub
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 12:03:42 Error: [Cake\View\Exception\MissingTemplateException] Template file "BuscarDesenvolvedores\index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'BuscarDesenvolvedores\\index.ctp',
+)
+Request URL: /miner/buscarDesenvolvedores
+Stack Trace:
+#0 C:\wamp\www\miner\vendor\cakephp\cakephp\src\View\View.php(462): Cake\View\View->_getViewFileName(NULL)
+#1 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Controller\Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BuscarDesenvolvedoresController))
+#4 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-07-22 12:06:59 Error: [Cake\Controller\Exception\MissingActionException] Action BuscarDesenvolvedoresController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'BuscarDesenvolvedoresController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedores
+Stack Trace:
+#0 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BuscarDesenvolvedoresController))
+#2 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-22 12:07:46 Error: [Cake\Controller\Exception\MissingActionException] Action BuscarDesenvolvedoresController::index() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'BuscarDesenvolvedoresController',
+  'action' => 'index',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedores
+Stack Trace:
+#0 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 C:\wamp\www\miner\vendor\cakephp\cakephp\src\Routing\Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\BuscarDesenvolvedoresController))
+#2 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-22 12:10:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedores could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedores',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedores
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 12:31:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class BuscarDesenvolvedoresGithubqwe could not be found.
+Exception Attributes: array (
+  'class' => 'BuscarDesenvolvedoresGithubqwe',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /miner/buscarDesenvolvedoresGithubqwe
+Stack Trace:
+#0 C:\wamp\www\miner\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-22 13:02:48 Warning: Warning (2): Missing argument 1 for Cake\View\Helper\FormHelper::input(), called in C:\wamp\www\miner\src\Template\BuscarDesenvolvedoresGithub\index.ctp on line 9 and defined in [C:\wamp\www\miner\vendor\cakephp\cakephp\src\View\Helper\FormHelper.php, line 993]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 139
+Cake\View\Helper\FormHelper::input() - CORE\src\View\Helper\FormHelper.php, line 993
+include - APP/Template\BuscarDesenvolvedoresGithub\index.ctp, line 9
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 834
+Cake\View\View::_render() - CORE\src\View\View.php, line 794
+Cake\View\View::render() - CORE\src\View\View.php, line 465
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

@@ -17,10 +17,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-=======
 
->>>>>>> 5dd1d197cf738ee1282d09b971dbc2cdf53a3058
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,16 +26,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-<<<<<<< HEAD
     <!-- custom css for templates -->
     <!-- <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?> -->
-=======
 
     <?= $this->Html->css('base.css') ?>
     <?= $this->Html->css('cake.css') ?>
-    <?= $this->Html->css('material-design-lite.css') ?>
->>>>>>> 5dd1d197cf738ee1282d09b971dbc2cdf53a3058
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
