@@ -8,21 +8,23 @@ use App\Controller\AppController;
  */
 class BuscarDesenvolvedoresGithubController extends AppController
 {
-    /**
-    * Carrega as informações iniciais da página
-    */
-    public function index() 
-    {
-        $this->set('color', 'pink');
-    }
+     /**
+     * Carrega as informações iniciais da página
+     * @return void
+     */
+     public function index()
+     {
+         $this->set('color', 'pink');
+     }
 
-    /**
-    * Busca por local
-    *
-    * @param filtro da busca 
-    */
-    public function buscarPorLocal($filtro)
-    {
-        $this->set('color', 'blue');
-    }
+     /**
+     * Busca por local
+     *
+     * @param $filtro
+     * @return usuarios
+     */
+     public function buscarPorLocal($filtro)
+     {
+         $this->set('color', 'blue');
+     }
 }
