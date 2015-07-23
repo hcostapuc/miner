@@ -10,21 +10,27 @@ class BuscarDesenvolvedoresGithubController extends AppController
 {
      /**
      * Carrega as informações iniciais da página
-     * @return void
+     *
+     * @return
      */
      public function index()
      {
-         $this->set('color', 'pink');
+         $client = new \Github\Client();
+
+         $users = $client->api('user')->find('Thiago Silva');
+         $this->set('usuarios', $users);
      }
 
      /**
-     * Busca por local
+     * Busca por Nome
      *
      * @param $filtro
      * @return usuarios
      */
-     public function buscarPorLocal($filtro)
+     public function buscarPorNome($filtro)
      {
          $this->set('color', 'blue');
      }
+
+
 }
