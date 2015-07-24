@@ -15,10 +15,7 @@ class BuscarDesenvolvedoresGithubController extends AppController
      */
      public function index()
      {
-         $client = new \Github\Client();
-
-         $users = $client->api('user')->find('Thiago Silva');
-         $this->set('usuarios', $users);
+         
      }
 
      /**
@@ -27,10 +24,14 @@ class BuscarDesenvolvedoresGithubController extends AppController
      * @param $filtro
      * @return usuarios
      */
-     public function buscarPorNome($filtro)
+     public function buscaPorNome()
      {
-         $this->set('color', 'blue');
+         $filtro = $this->request->data['nome'];
+         $client = new \Github\Client();
+         $users = $client->api('user')->find($filtro);
+ 
+         $this->set('usuarios', $users);
+         $this->set('filtro', $filtro);
      }
-
 
 }
