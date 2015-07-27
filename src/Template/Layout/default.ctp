@@ -11,6 +11,7 @@
     <!-- custom css for templates -->
     <?= $this->Html->css('custom.css') ?>
     <?= $this->Html->css('font-mfizz.css') ?>
+    <?= $this->Html->css('custom-login.css') ?>
     <!-- Latest compiled and minified bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- -font awesome -->

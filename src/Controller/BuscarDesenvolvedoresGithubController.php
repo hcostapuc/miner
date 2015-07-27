@@ -4,7 +4,7 @@ namespace App\Controller;
 use App\Controller\AppController;
 
 /**
- * Controller com as ações da tela Buscar Desenvolvedores do Github
+ * Controller com as ações da buscar de desenvolvedores do Github
  *
  * @author Lucas Andrey
  */
