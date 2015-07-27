@@ -8,7 +8,7 @@ use Cake\View\Helper;
  *
  * @author Lucas Andrey
  */
-class desenvolvedoresGitHubHelper extends Helper
+class DesenvolvedoresGitHubHelper extends Helper
 {
     
 	/**
