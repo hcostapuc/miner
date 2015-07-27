@@ -10,6 +10,7 @@
     <?= $this->Html->meta('icon') ?>
     <!-- custom css for templates -->
     <?= $this->Html->css('custom.css') ?>
+    <?= $this->Html->css('font-mfizz.css') ?>
     <!-- Latest compiled and minified bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- -font awesome -->
@@ -29,6 +30,8 @@
         <footer>
         </footer>
     </div>
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>

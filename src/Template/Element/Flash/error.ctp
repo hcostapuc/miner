@@ -1,1 +1,1 @@
-<div class="message error"><?= h($message) ?></div>
+<div "alert alert-danger" role="alert"><?= h($message) ?></div>
