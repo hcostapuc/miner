@@ -41,7 +41,7 @@ class UsersController extends AppController
     /**
      * Adiciona um novo usuário ao Miner
      *
-     * @return um novo usuário cadastrado no banco.
+     * @return void
      */
     public function add()
     {

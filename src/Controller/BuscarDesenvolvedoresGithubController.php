@@ -17,22 +17,42 @@ class BuscarDesenvolvedoresGithubController extends AppController
      */
      public function index()
      {
-        //informações iniciais
+       // TODO: autenticação de usuário
      }
 
-     /**
-     * Busca usuários do GitHub por nome
-     *
-     * @param $filtro
-     * @return void
-     */
-    public function buscaPorNome()
-    {
-        $filtro = $this->request->data['nome'];
-        $client = new \Github\Client();
-        $usuarios = $client->api('user')->find($filtro);
+    /**
+    * Busca usuários do GitHub por local
+    *
+    * @return void
+    */
+   public function buscaPorLocal()
+   {
+       // TODO: usar usuário autenticado
+       $filtro = $this->request->data['local'];
 
-        $this->set('usuarios', $usuarios);
-        $this->set('quantidadeUsuarios', count($usuarios['users']));
-    }
+       $client = new \Github\Client(new \Github\HttpClient\CachedHttpClient(
+           array('cache_dir' => '/tmp/github-api-cache')));
+       $usuarios = $client->api('user')->find($filtro);
+
+       $this->set('usuarios', $usuarios);
+       $this->set('quantidadeUsuarios', count($usuarios['users']));
+   }
+
+   /**
+   * Busca usuários do GitHub por linguagem
+   *
+   * @return void
+   */
+  public function buscaPorLinguagem()
+  {
+       // TODO: autenticação de usuário
+      $filtro = $this->request->data['linguagem'];
+
+      $client = new \Github\Client(new \Github\HttpClient\CachedHttpClient(
+          array('cache_dir' => '/tmp/github-api-cache')));
+      $usuarios = $client->api('user')->find($filtro);
+
+      $this->set('usuarios', $usuarios);
+      $this->set('quantidadeUsuarios', count($usuarios['users']));
+  }
 }

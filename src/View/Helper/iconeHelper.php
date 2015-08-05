@@ -1,7 +1,9 @@
-<?php 
+<?php
 namespace App\View\Helper;
 
 use Cake\View\Helper;
+
+define('ESTILO', "style='font-size: 20px'");
 
 /**
  * Helper para transformar conteúdo em icones
@@ -10,69 +12,67 @@ use Cake\View\Helper;
  */
 class IconeHelper extends Helper
 {
-    
+
 	/**
      * Retorna um icone de acordo com a linguagem
      *
-     * @param $linguagem
-     * @return $icone
+     * @param string $linguagem  nome da linguagem a ser convertida
+     * @return string $icone  tag correspondente à linguagem
      */
     public function transformaLiguagemEmIcone($linguagem)
     {
-    	$estilo = 'style="font-size:20px"';
 
         switch ($linguagem) {
             case 'Java':
-                $icone = '<i class="icon-java" ' . $estilo . '></i> Java';
+                $icone = '<i class="icon-java"'.ESTILO.'></i> Java';
                 break;
             case 'PHP':
-                $icone = '<i class="icon-php" ' . $estilo . '></i> PHP';
+                $icone = '<i class="icon-php"'.ESTILO.'></i> PHP';
                 break;
             case 'Clojure':
-                $icone = '<i class="icon-clojure" ' . $estilo . '></i> Clojure';
+                $icone = '<i class="icon-clojure"'.ESTILO.'></i> Clojure';
                 break;
             case 'CSS':
-                $icone = '<i class="icon-css" ' . $estilo . '></i> CSS';
+                $icone = '<i class="icon-css"'.ESTILO.'></i> CSS';
                 break;
             case 'HTML':
-                $icone = '<i class="icon-html" ' . $estilo . '></i> HTML';
+                $icone = '<i class="icon-html"'.ESTILO.'></i> HTML';
                 break;
             case 'Ruby':
-                $icone = '<i class="icon-ruby" ' . $estilo . '></i> Ruby';
+                $icone = '<i class="icon-ruby"'.ESTILO.'></i> Ruby';
                 break;
             case 'JavaScript':
-                $icone = '<i class="icon-javascript" ' . $estilo . '></i> JavaScript';
+                $icone = '<i class="icon-javascript"'.ESTILO.'></i> JavaScript';
                 break;
             case 'Python':
-                $icone = '<i class="icon-python" ' . $estilo . '></i> Python';
+                $icone = '<i class="icon-python"'.ESTILO.'></i> Python';
                 break;
             case 'Perl':
-                $icone = '<i class="icon-perl" ' . $estilo . '></i> Perl';
+                $icone = '<i class="icon-perl"'.ESTILO.'></i> Perl';
                 break;
             case 'C':
-                $icone = '<i class="icon-c" ' . $estilo . '></i> C';
+                $icone = '<i class="icon-c"'.ESTILO.'></i>';
                 break;
             case 'C++':
-                $icone = '<i class="icon-cplusplus" ' . $estilo . '></i> C++';
+                $icone = '<i class="icon-cplusplus"'.ESTILO.'></i>';
                 break;
             case 'Objective-C':
-                $icone = '<i class="icon-objc" ' . $estilo . '></i> Objective-C';
+                $icone = '<i class="icon-objc"'.ESTILO.'></i> Objective-C';
                 break;
             case 'C#':
-                $icone = '<i class="icon-csharp" ' . $estilo . '></i> C#';
+                $icone = '<i class="icon-csharp"'.ESTILO.'></i>';
                 break;
             case 'Scala':
-                $icone = '<i class="icon-scala" ' . $estilo . '></i> Scala';
+                $icone = '<i class="icon-scala"'.ESTILO.'></i> Scala';
                 break;
             case 'Haskell':
-                $icone = '<i class="icon-haskell" ' . $estilo . '></i> Haskell';
+                $icone = '<i class="icon-haskell"'.ESTILO.'></i> Haskell';
                 break;
             case 'Shell':
-                $icone = '<i class="icon-shell" ' . $estilo . '></i> Shell';
+                $icone = '<i class="icon-shell"'.ESTILO.'></i> Shell';
                 break;
-            
             default:
-                $icone = '<i class="fa fa-code" ' . $estilo . '></i>';
+                $icone = '<i class="fa fa-code"'.ESTILO.'></i> Desconhecido';
                 break;
         }
         return $icone;

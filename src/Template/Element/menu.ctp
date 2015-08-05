@@ -1,5 +1,5 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
+<nav class="navbar navbar-inverse">
+  <div class="container">
 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -19,8 +19,8 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Buscar Desenvolvedores <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li>
-              <?php echo $this->Html->link('<i class="fa fa-github"></i> GitHub', 
-                ['controller' => 'BuscarDesenvolvedoresGitHub', 'action' => 'index'], 
+              <?php echo $this->Html->link('<i class="fa fa-github"></i> GitHub',
+                ['controller' => 'BuscarDesenvolvedoresGitHub', 'action' => 'index'],
                 ['escape' => false]); ?>
             </li>
             <li>
@@ -85,5 +85,5 @@
       </ul>
     </div><!-- /.navbar-collapse -->
 
-  </div><!-- /.container-fluid -->
+  </div><!-- /.container -->
 </nav>

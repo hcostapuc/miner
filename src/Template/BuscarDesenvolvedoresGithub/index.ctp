@@ -1,20 +1,41 @@
 <div class="container">
-    
-	<h2 align="center">Desenvolvedores do Github</h2>
-	<div class="row">	
-		<div class="col-lg-4 col-lg-offset-4">
-		 	<?php echo $this->Form->create(null, ['url' => ['controller' => 'BuscarDesenvolvedoresGithub',
-			  'action' => 'buscaPorNome']]); ?>
 
-				<?php echo $this->Form->input(null, 
-				  	['class' => 'form-control', 'required' => 'true', 'autofocus' => 'true', 'placeholder' => 'Nome', 'type' => 'text', 'id' => 'nome', 'name' => 'nome']); ?>
-		</div>
-	</div>
-	<div class="row">
-		<div class="col-lg-4 col-lg-offset-4" align="right">	  	
-				<?php echo $this->Form->button('Pesquisar <i class="fa fa-search"></i>', 
-			  	['class' => 'btn btn-primary']); ?>
-		</div>
-	</div>
-		  	<?php echo $this->Form->end(); ?>
+    <div class="jumbotron">
+      <div class="container">
+        <h1><i class="fa fa-github"></i> Busca no GitHub</h1>
+        <p>Busque desenvolvedores no GitHub usando filtros de localidade, linguagem, ou combine filtros para refinar sua pesquisa e encontrar desenvolvedores como um ninja!</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Comece agora &raquo;</a></p>
+      </div>
+    </div><!--/ .jumbotron -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2><i class="fa fa-map-marker"></i> Localização</h2>
+          <p align="justify">
+            Procure por local e encontre os melhores e mais ativos desenvolvedores de <b>qualquer lugar</b> do mundo.
+            Busque por país, estado ou cidade e descubra desenvolvedores por perto.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-search"></i> Buscar</a></p>
+        </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-code"></i> Linguagem</h2>
+          <p align="justify">
+            Busque por linguagem, e <b>encontre quem realmente sabe</b> usar Ruby, Java, JavaScript ou qualquer outra linguagem.
+          </p>
+          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-search"></i> Buscar</a></p>
+       </div>
+        <div class="col-md-4">
+          <h2><i class="fa fa-diamond"></i> Miner</h2>
+          <p align="justify">
+            Seja um <b>minerador</b> de verdade! Busque por desenvolvedores em <b>todas as redes</b> (GitHub, StackOverFlow e LinkedIn)
+            <b>sem limites</b> de busca. Controle listas de pessoas encontradas e muito mais!
+          </p>
+          <p><a class="btn btn-success" href="#" role="button">Seja um <b>miner</b></a>
+          <a class="btn btn-default" href="#" role="button">Como funciona </a>
+          </p>
+        </div>
+      </div>
+    </div><!--/ .container -->
+
 </div>

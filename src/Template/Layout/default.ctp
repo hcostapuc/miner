@@ -24,11 +24,10 @@
         <div id="content">
             <?= $this->Flash->render() ?>
 
-            <div class="row">
                 <?= $this->fetch('content') ?>
-            </div>
         </div>
         <footer>
+          <!-- rodapé.ctp -->
         </footer>
     </div>
 <!-- Placed at the end of the document so the pages load faster -->
