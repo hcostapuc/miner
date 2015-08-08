@@ -15,7 +15,7 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-
+use Cake\Event\Event;
 /**
  * Application Controller
  *
@@ -38,5 +38,25 @@ class AppController extends Controller
     {
         parent::initialize();
         $this->loadComponent('Flash');
+        $this->loadComponent('Auth', [
+            'loginRedirect' => [
+                'controller' => 'BuscarDesenvolvedoresGithub',
+                'action' => 'index'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Users',
+                'action' => 'index'
+            ]
+        ]);
+    }
+
+     /**
+     * Este metodo filtra as paginas que o usuário pode acessar.
+     *
+     * @return void
+     */
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['index']);
     }
 }

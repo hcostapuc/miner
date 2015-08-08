@@ -1,24 +1,30 @@
 <div class="container">
   <div class="col-md-4"></div>
   <div class="col-md-6">
-    <?= $this->Form->create($user, ['class'=>'form-signin mg-btm']) ?> 
+    <?= $this->Flash->render('Auth') ?>
+    <?= $this->Form->create(null,['class'=>'form-signin mg-btm', 'url' => ['controller' => 'Users',
+    'action' => 'login']]) ?>
     <h2 class="heading-desc" align="center">Entre já!</h2>
-    <div class="main">  
+    <div class="main">
       <input type="text" class="form-control" name='username' placeholder="Usuário" autofocus="true" required="true" id="username">
       <input type="password" class="form-control" name='password' placeholder="Senha" autofocus="true"required="true" id="password">
       Você ainda não é cadastrado? <a href="../users/add"> Cadastre-se</a>
-      <span class="clearfix"></span>  
+      <span class="clearfix"></span>
     </div>
     <div class="login-footer">
+      <div class="row" align="center">
+        <button type="submit" class="btn-cadastro">Entrar</button>
+      </div>
       <div class="row">
-        <div class="col-xs-6 col-md-6">
-          <div class="left-section">
-            <a href="">Esqueceu sua senha?</a>
-          </div>
+        <div class=".col-md-12">
+        <div class=".col-xs-6 .col-sm-3" align="center">
+          <button type="submit" class="btn btn-github"><i class="fa fa-github"></i></button>
+          <button type="submit" class="btn btn-google-plus"><i class="fa fa-google-plus"></i></button>
+          <button type="submit" class="btn btn-twitter"><i class="fa fa-twitter"></i></button>
+          <button type="submit" class="btn btn-facebook"><i class="fa fa-facebook-official"></i></button>
+
         </div>
-        <div class="col-xs-6 col-md-6 pull-right">
-          <button type="submit" class="btn btn-large btn-primary pull-right">Entrar</button>
-        </div>
+      </div>
       </div>
     </div>
   </div>

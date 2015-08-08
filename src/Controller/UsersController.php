@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Controller com as ações que envolvem usuários
@@ -41,7 +42,7 @@ class UsersController extends AppController
     /**
      * Adiciona um novo usuário ao Miner
      *
-     * @return void
+     * @return um novo usuário cadastrado no banco.
      */
     public function add()
     {
@@ -58,4 +59,43 @@ class UsersController extends AppController
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);
     }
+
+    /**
+     * Perimite o usuário logado, fazer o logout
+     *
+     * @return
+     */
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+        $this->Auth->allow(['add']);
+    }
+
+    /**
+     * Efetua Login
+     *
+     * @return
+     */
+    public function login()
+    {
+        if ($this->request->is('post')) {
+            $user = $this->Auth->identify();
+            if ($user) {
+                $this->Auth->setUser($user);
+                return $this->redirect($this->Auth->redirectUrl());
+            }
+            $this->Flash->error('Usuário ou senha incorretos! Tente novamente.');
+        }
+    }
+
+    /**
+     * Efetua Logout
+     *
+     * @return
+     */
+    public function logout()
+    {
+        return $this->redirect($this->Auth->logout());
+    }
+
 }
