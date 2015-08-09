@@ -5,3 +5,6 @@ languages:
   Python: true
 exclude_paths:
 - "config/app.default.php"
+- "config/app.php"
+- "src/Template/Error/error400.ctp"
+- "src/Template/Error/error500.ctp"

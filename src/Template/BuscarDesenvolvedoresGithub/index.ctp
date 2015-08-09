@@ -4,7 +4,11 @@
       <div class="container">
         <h1><i class="fa fa-github"></i> Busca no GitHub</h1>
         <p>Busque desenvolvedores no GitHub usando filtros de localidade, linguagem, ou combine filtros para refinar sua pesquisa e encontrar desenvolvedores como um ninja!</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Comece agora &raquo;</a></p>
+        <p>
+          <?php echo $this->Html->link('Comece agora &raquo;',
+              ['controller' => 'BuscarDesenvolvedoresGitHub', 'action' => 'busca'],
+              ['class' => 'btn btn-primary btn-lg', 'escape' => false]); ?>
+        </p>
       </div>
     </div><!--/ .jumbotron -->
 
@@ -16,14 +20,23 @@
             Procure por local e encontre os melhores e mais ativos desenvolvedores de <b>qualquer lugar</b> do mundo.
             Busque por país, estado ou cidade e descubra desenvolvedores por perto.
           </p>
-          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-search"></i> Buscar</a></p>
+          <p>
+            <?php echo $this->Html->link('<i class="fa fa-search"></i> Buscar',
+                ['controller' => 'BuscarDesenvolvedoresGitHub', 'action' => 'busca', 'local' => 'Belo Horizonte'],
+                ['class' => 'btn btn-default', 'escape' => false]); ?>
+          </p>
         </div>
         <div class="col-md-4">
           <h2><i class="fa fa-code"></i> Linguagem</h2>
           <p align="justify">
             Busque por linguagem, e <b>encontre quem realmente sabe</b> usar Ruby, Java, JavaScript ou qualquer outra linguagem.
           </p>
-          <p><a class="btn btn-default" href="#" role="button"><i class="fa fa-search"></i> Buscar</a></p>
+          <br/>
+          <p>
+            <?php echo $this->Html->link('<i class="fa fa-search"></i> Buscar',
+                ['controller' => 'BuscarDesenvolvedoresGitHub', 'action' => 'busca', 'linguagem' => true],
+                ['class' => 'btn btn-default', 'escape' => false]); ?>
+          </p>
        </div>
         <div class="col-md-4">
           <h2><i class="fa fa-diamond"></i> Miner</h2>

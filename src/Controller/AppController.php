@@ -51,12 +51,14 @@ class AppController extends Controller
     }
 
      /**
-     * Este metodo filtra as paginas que o usuário pode acessar.
+     * Filtra as páginas que o usuário pode acessar fazer login
      *
      * @return void
      */
     public function beforeFilter(Event $event)
     {
         $this->Auth->allow(['index']);
+        $this->Auth->allow(['busca']);
+        $this->Auth->allow(['resultado']);
     }
 }

@@ -42,7 +42,7 @@ class UsersController extends AppController
     /**
      * Adiciona um novo usuário ao Miner
      *
-     * @return um novo usuário cadastrado no banco.
+     * @return void
      */
     public function add()
     {
@@ -61,9 +61,9 @@ class UsersController extends AppController
     }
 
     /**
-     * Perimite o usuário logado, fazer o logout
+     * Perimite ao usuário logado, fazer o logout
      *
-     * @return
+     * @return void
      */
     public function beforeFilter(Event $event)
     {
@@ -72,9 +72,9 @@ class UsersController extends AppController
     }
 
     /**
-     * Efetua Login
+     * Efetua Login do usuário caso as credenciais estejam corretas
      *
-     * @return
+     * @return void
      */
     public function login()
     {
@@ -89,13 +89,12 @@ class UsersController extends AppController
     }
 
     /**
-     * Efetua Logout
+     * Efetua Logout de um usuário logado
      *
-     * @return
+     * @return void
      */
     public function logout()
     {
         return $this->redirect($this->Auth->logout());
     }
-
 }
